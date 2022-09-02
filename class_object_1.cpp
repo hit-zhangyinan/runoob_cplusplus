@@ -1,3 +1,7 @@
+
+// https://www.runoob.com/cplusplus/cpp-classes-objects.html
+// 2022.09.02
+
 #include <iostream>
 
 using namespace std;
