@@ -31,7 +31,7 @@ void Box::set(double len, double bre, double hei)
 {
 	len = length;	// 这是错误的写法
 	bre = breadth;	// 类成员没有获得正确的值
-	hei = height;
+	hei = height;	// 能够编译生成可执行文件，但是程序的执行结果错误
 }
 */
 
