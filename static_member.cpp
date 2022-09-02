@@ -14,6 +14,7 @@ private:
 
 public:
 	static int objectCount;
+
 	Box(double l = 2.0, double b = 2.0, double h = 2.0)
 	{
 		cout << "Constructor called." << endl;
@@ -27,17 +28,24 @@ public:
 	{
 		return length * breadth * height;
 	}
+
+	static int getCount()
+	{
+		return objectCount;
+	}
 };
 
 int Box::objectCount = 0;
 
 int main()
 {
+	cout << "Initial Count: " << Box::getCount() << endl;
+
 	Box box1;
 	Box box2(3.3, 1.2, 1.5);
 	Box box3(2.7, 4.5, 6.3);
 
-	cout << "Total objects: " << Box::objectCount << endl;
+	cout << "Final Count: " << Box::getCount() << endl;
 
 	return 0;
 }
