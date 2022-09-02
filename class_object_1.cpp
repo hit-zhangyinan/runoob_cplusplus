@@ -20,10 +20,21 @@ double Box::get(void)
 
 void Box::set(double len, double bre, double hei)
 {
-	length = len;	
-	breadth = bre;	
+	length = len;	// 把外部变量的值赋值类成员
+	breadth = bre;	// 这种方式能得到正确的值
 	height = hei;	
 }
+
+
+/*
+void Box::set(double len, double bre, double hei)
+{
+	len = length;	// 这是错误的写法
+	bre = breadth;	// 类成员没有获得正确的值
+	hei = height;
+}
+*/
+
 
 int main()
 {
