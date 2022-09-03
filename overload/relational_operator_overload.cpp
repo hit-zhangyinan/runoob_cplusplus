@@ -25,6 +25,18 @@ public:
 			return true;
 		return false;
 	}
+	
+	/*
+	bool operator<(const Distance& d)
+	{
+		if (this->feet < d.feet)
+			return true;
+		if (this->feet == d.feet && this->inches < d.inches)
+			return true;
+		return false;
+	}
+	*/
+	
 };
 
 int main()
