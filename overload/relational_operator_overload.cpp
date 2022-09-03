@@ -26,7 +26,7 @@ public:
 		return false;
 	}
 	
-	/*
+	/* 这种写法也正确
 	bool operator<(const Distance& d)
 	{
 		if (this->feet < d.feet)
