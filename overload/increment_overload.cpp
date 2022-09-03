@@ -16,7 +16,8 @@ public:
 	Time(int h, int m) { hours = h; minutes = m; }
 
 	void displayTime() { cout << "H: " << hours << " M: " << minutes << endl; }
-
+	
+	// 重载前缀递增运算符（ ++ ）
 	Time operator++()
 	{
 		++minutes;
@@ -28,6 +29,7 @@ public:
 		return Time(hours, minutes);
 	}
 
+	// 重载后缀递增运算符（ ++ ）
 	Time operator++(int)
 	{
 		Time T(hours, minutes);
