@@ -1,6 +1,7 @@
 // https://www.runoob.com/cplusplus/cpp-overloading.html
 // 2022.09.03
 // operator+
+// 重载的运算符是带有特殊名称的函数，函数名是由关键字 operator 和其后要重载的运算符符号构成的
 
 #include <iostream>
 
